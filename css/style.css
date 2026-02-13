@@ -835,3 +835,29 @@ body {
 .nav-bar .active-link::after {
     width: 100%;
 }
+
+/* ================= EVENT PAGE ================= */
+
+.events-section {
+    padding: 60px 8%;
+}
+
+.event-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent);
+    color: white;
+}
