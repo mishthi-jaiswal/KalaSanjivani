@@ -288,7 +288,7 @@ body {
     padding: 50px 45px;
     width: 420px;
     border-radius: 10px;
-    border-top: 5px solid var(--primary);
+    border-top: 5px solid var (--primary);
     box-shadow: 0 8px 24px rgba(139,94,60,0.12);
     text-align: center;
     transition: all 0.25s ease;
@@ -389,7 +389,6 @@ body {
 .login-links p {
     margin-top: 8px;
 }
-
 .footer-section {
     text-align: center;
     background: var(--primary);
