@@ -1,0 +1,287 @@
+:root {
+    --primary: #8B5E3C;     /* Deep earthy brown */
+    --secondary: #CFAF87;   /* Warm sand/beige */
+    --background: #FFF7F0;  /* Very light cream */
+    --accent: #E2B89C;      /* Soft coral/pastel accent */
+    --text-dark: #3B2E2A;   /* Dark chocolate */
+}
+
+/* ========================= BODY ========================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+/* ========================= TOP BAR ========================= */
+.top-bar {
+    background: var(--secondary);
+    padding: 6px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.top-right i,
+.font-btn {
+    margin-left: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.top-right i:hover,
+.font-btn:hover {
+    color: var(--primary);
+    transform: scale(1.3) rotate(5deg);
+}
+
+/* ========================= LOGO BAR ========================= */
+.logo-bar {
+    background: white;
+    padding: 25px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(139,94,60,0.15);
+}
+
+.logo-left {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    width: 90px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;           /* make circular */
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(139,94,60,0.3);
+}
+
+.ministry-logo {
+    width: 130px;
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+.ministry-logo:hover {
+    transform: scale(1.08);
+}
+
+/* ========================= NAVBAR ========================= */
+.nav-bar {
+    background: var(--primary);
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+/* ========================= SEARCH BAR ========================= */
+.search-section {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    width: 60%;
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(145deg, var(--secondary), var(--accent));
+    box-shadow: 0 10px 30px rgba(139,94,60,0.15);
+    transition: all 0.4s ease;
+}
+
+.search-box:hover {
+    transform: scale(1.02);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: white;
+    border-radius: 40px 0 0 40px;
+}
+
+.search-box button {
+    background: var(--accent);
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0 40px 40px 0;
+}
+
+.search-box button:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ========================= FADE CAROUSEL ========================= */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.fade-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeAnimation 16s infinite;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Delay for each image */
+.fade-slide:nth-child(1) { animation-delay: 0s; }
+.fade-slide:nth-child(2) { animation-delay: 4s; }
+.fade-slide:nth-child(3) { animation-delay: 8s; }
+.fade-slide:nth-child(4) { animation-delay: 12s; }
+
+@keyframes fadeAnimation {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* ========================= INITIATIVE SECTION ========================= */
+.initiative-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+}
+
+.initiative-tag {
+    background: var(--secondary);
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.initiative-tag:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+/* Headings */
+.initiative-section h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.initiative-section h2:hover {
+    color: var(--accent);
+    transform: scale(1.02);
+}
+
+.initiative-section h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.initiative-section h3:hover {
+    color: var(--accent);
+    transform: scale(1.01);
+}
+
+/* Description */
+.description {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 14px 28px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 6px 15px rgba(139,94,60,0.25);
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    transform: translateY(-4px) scale(1.05);
+}
+
+.btn-secondary {
+    background: var(--accent);
+    color: #3B2E2A;
+    box-shadow: 0 6px 15px rgba(226,184,156,0.25);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-4px) scale(1.05);
+}
