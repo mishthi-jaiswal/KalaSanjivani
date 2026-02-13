@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <title>Kala Sanjivani</title>
 
-    <!-- Link your CSS file -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 
 <body>
 
-<!-- ============================= -->
-<!-- SECTION 1 : TOP BAR -->
-<!-- ============================= -->
+<!-- TOP BAR -->
 <div class="top-bar">
-    <div class="top-left">
-        भारत सरकार | Government of India
-    </div>
-
+    <div class="top-left">भारत सरकार | Government of India</div>
     <div class="top-right">
         <span class="font-btn">A-</span>
         <span class="font-btn">A</span>
         <span class="font-btn">A+</span>
-
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-youtube"></i>
@@ -36,59 +36,33 @@
     </div>
 </div>
 
-
-<!-- ============================= -->
-<!-- SECTION 2 : LOGO BAR -->
-<!-- ============================= -->
+<!-- LOGO BAR -->
 <div class="logo-bar">
-
     <div class="logo-left">
-
-       
-        <img src="images/KSlogo.png" 
-             alt="Kala Sanjivani Logo" 
-             class="main-logo">
-
+        <img src="images/KSlogo.png" alt="Kala Sanjivani Logo" class="main-logo">
         <div class="title-section">
             <h1>Kala Sanjivani</h1>
             <p>National Ecosystem for Living Culture and Heritage</p>
         </div>
     </div>
-
     <div class="logo-right">
-
-        <!-- 
-            🟣 MINISTRY OF CULTURE LOGO IMAGE
-            Replace src with your ministry logo image
-            Example: images/ministry-logo.png
-        -->
-        <img src="images/Ministry_of_Culture_India.svg.png" 
-             alt="Ministry of Culture Logo" 
-             class="ministry-logo">
-
+        <img src="images/Ministry_of_Culture_India.svg.png" alt="Ministry of Culture Logo" class="ministry-logo">
     </div>
-
 </div>
 
-
-<!-- ============================= -->
-<!-- SECTION 3 : NAVIGATION -->
-<!-- ============================= -->
+<!-- NAVBAR -->
 <div class="nav-bar">
-    <a href="#"><i class="fa fa-home"></i> Home</a>
-    <a href="#"><i class="fa fa-info-circle"></i> About Us</a>
-    <a href="#"><i class="fa fa-compass"></i> Explore</a>
-    <a href="#"><i class="fa fa-calendar"></i> Events</a>
-    <a href="#"><i class="fa fa-store"></i> Store</a>
-    <a href="#"><i class="fa fa-users"></i> Artisans</a>
+    <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+    <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a>
+    <a href="explore.html"><i class="fa fa-compass"></i> Explore</a>
+    <a href="events.html"><i class="fa fa-calendar"></i> Events</a>
+    <a href="store.html"><i class="fa fa-store"></i> Store</a>
+    <a href="dashboard-artisan.html"><i class="fa fa-users"></i> Artisans</a>
     <a href="#"><i class="fa fa-book-open"></i> Stories</a>
-    <a href="#"><i class="fa fa-sign-in-alt"></i> Login</a>
+    <a href="login.html"><i class="fa fa-sign-in-alt"></i> Login</a>
 </div>
 
-
-<!-- ============================= -->
 <!-- SEARCH BAR -->
-<!-- ============================= -->
 <div class="search-section">
     <div class="search-box">
         <input type="text" placeholder="Search art forms, artisans, events...">
@@ -96,52 +70,317 @@
     </div>
 </div>
 
-
-<!-- ============================= -->
-<!-- SECTION 4 : FADE CAROUSEL -->
-<!-- ============================= -->
-
+<!-- FADE CAROUSEL -->
 <div class="carousel">
-
     <img src="images/Cr2.png" class="fade-slide active">
     <img src="images/Cr3.png" class="fade-slide">
     <img src="images/Cr4.png" class="fade-slide">
     <img src="images/Cr5.png" class="fade-slide">
-
 </div>
 
-
-<!-- ============================= -->
-<!-- SECTION 5 : INITIATIVE SECTION -->
-<!-- ============================= -->
+<!-- INITIATIVE SECTION -->
 <div class="initiative-section">
-
-    <p class="initiative-tag">
-        <i class="fa fa-globe"></i> Government of India Initiative
-    </p>
-
+    <p class="initiative-tag"><i class="fa fa-globe"></i> Government of India Initiative</p>
     <h2>Kala Sanjivani</h2>
-
-    <h3>
-        <b>K</b>nowledge-<b>L</b>ed <b>A</b>rt and <b>L</b>ivelihood <b>A</b>rchival
-    </h3>
-
+    <h3><b>K</b>nowledge-<b>L</b>ed <b>A</b>rt and <b>L</b>ivelihood <b>A</b>rchival</h3>
     <p class="ministry-text">
         Ministry of Culture <br>
         National Digital Platform for Living Culture and Heritage
     </p>
-
     <p class="description">
         An integrated platform for preserving, promoting, and activating India’s traditional art forms 
         through verified artisan networks, cultural participation, and data-driven heritage insights.
     </p>
-
     <div class="buttons">
         <button class="btn-primary">Learn More</button>
         <button class="btn-secondary">Join Platform</button>
     </div>
-
 </div>
+
+<!-- ================= IMPACT SECTION ================= -->
+<section class="impact-section-new">
+
+    <div class="impact-left-new">
+        <h2>Our National Impact</h2>
+        <p class="impact-intro">
+            Kala Sanjivani is strengthening India’s cultural ecosystem through
+            preservation, digital access, and sustainable livelihoods.
+        </p>
+
+        <div class="impact-objectives">
+
+            <div class="objective-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h4>Heritage Preservation</h4>
+                    <p>Safeguarding traditional art forms and intangible heritage.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h4>Artisan Empowerment</h4>
+                    <p>Providing digital visibility and income opportunities.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <h4>Data-Driven Insights</h4>
+                    <p>Real-time analytics for cultural planning and outreach.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                    <h4>Nationwide Inclusion</h4>
+                    <p>Expanding cultural participation across all states.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="impact-right-new">
+        <h3>Impact Statistics</h3>
+
+        <div class="stats-grid-new">
+
+            <div class="stat-box">
+                <h2>6,000+</h2>
+                <p>Registered Artisans</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Partner NGOs</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>120+</h2>
+                <p>Cultural Events</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>28</h2>
+                <p>States Covered</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- STAKEHOLDERS SECTION -->
+<section class="stakeholders-section">
+
+    <h2 class="stakeholders-title">Our Stakeholders Ecosystem</h2>
+    <p class="stakeholders-subtitle">
+        Connecting communities, creators, institutions and cultural facilitators under one national platform.
+    </p>
+
+    <div class="stakeholders-grid">
+
+        <!-- Explorer -->
+        <div class="stakeholder-card">
+            <div class="stakeholder-icon">
+                <i class="fas fa-compass"></i>
+            </div>
+            <h3>Explorers</h3>
+            <p>Students, visitors and citizens discovering India’s living heritage.</p>
+            <a href="login.html" class="stakeholder-btn">Access Portal</a>
+        </div>
+
+        <!-- Artisans -->
+        <div class="stakeholder-card">
+            <div class="stakeholder-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Artisans</h3>
+            <p>Traditional creators showcasing skills, workshops and cultural knowledge.</p>
+            <a href="login.html" class="stakeholder-btn">Access Portal</a>
+        </div>
+
+        <!-- Facilitators -->
+        <div class="stakeholder-card">
+            <div class="stakeholder-icon">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Facilitators</h3>
+            <p>NGOs and volunteers enabling onboarding and digital inclusion.</p>
+            <a href="login.html" class="stakeholder-btn">Access Portal</a>
+        </div>
+
+        <!-- Institutions -->
+        <div class="stakeholder-card">
+            <div class="stakeholder-icon">
+                <i class="fas fa-university"></i>
+            </div>
+            <h3>Institutions</h3>
+            <p>Organizations hosting cultural events and promoting heritage programs.</p>
+            <a href="login.html" class="stakeholder-btn">Access Portal</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MINISTRY SECTION ================= -->
+<section class="ministry-section">
+
+    <h2 class="ministry-title">Ministry of Culture</h2>
+
+    <p class="ministry-description">
+        The Ministry of Culture, Government of India, is responsible for the preservation,
+        promotion and dissemination of art and culture across the nation. It works towards
+        safeguarding India's tangible and intangible heritage, supporting artists,
+        strengthening institutions and enabling cultural participation at all levels.
+    </p>
+
+    <div class="minister-container">
+
+        <!-- Cabinet Minister -->
+        <div class="minister-card" onclick="openModal('cabinet')">
+            <img src="images/gajendra.png" alt="Minister of Culture">
+            <h4>Hon'ble Minister of Culture</h4>
+            <h3>Shri Gajendra Singh Shekhawat</h3>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <!-- Minister of State -->
+        <div class="minister-card" onclick="openModal('state')">
+            <img src="images/rao.png" alt="Minister of State">
+            <h4>Hon'ble Minister of State for Culture</h4>
+            <h3>Shri Rao Inderjit Singh</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MODAL POPUP ================= -->
+<div id="ministerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer-section">
+    <p>&copy; 2026 Kala Sanjivani | Ministry of Culture, Government of India</p>
+</footer>
+
+<!-- JS -->
+<script>
+
+    /* ================= FONT SIZE CONTROLS ================= */
+    const fontButtons = document.querySelectorAll('.font-btn');
+
+    fontButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const size = btn.textContent.trim();
+
+            if(size === 'A-') document.body.style.fontSize = '14px';
+            if(size === 'A') document.body.style.fontSize = '16px';
+            if(size === 'A+') document.body.style.fontSize = '18px';
+        });
+    });
+
+
+
+    /* ================= FADE CAROUSEL ================= */
+    const slides = document.querySelectorAll('.fade-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }, 4000);
+
+
+
+    /* ================= IMPACT MAP DEMO ================= */
+    const stateImpactData = {
+        "Madhya Pradesh": { artisans: 320, ngos: 8 },
+        "Uttar Pradesh": { artisans: 600, ngos: 12 },
+        "Rajasthan": { artisans: 450, ngos: 10 },
+        "Maharashtra": { artisans: 700, ngos: 15 }
+    };
+
+    const indiaMap = document.getElementById("india-map");
+    const mapInfo = document.getElementById("map-info");
+
+    if (indiaMap) {
+        indiaMap.addEventListener("click", function () {
+
+            // Demo state (you can replace with real dynamic state later)
+            const stateName = "Madhya Pradesh";
+            const data = stateImpactData[stateName];
+
+            mapInfo.innerHTML = `
+                <h4>${stateName}</h4>
+                <p>🎨 Artisans: ${data.artisans}</p>
+                <p>🤝 NGOs: ${data.ngos}</p>
+            `;
+        });
+    }
+    function openModal(type) {
+
+    const modal = document.getElementById("ministerModal");
+    const modalBody = document.getElementById("modalBody");
+
+    if(type === "cabinet") {
+        modalBody.innerHTML = `
+            <img src="images/gajendra.png">
+            <h2>Shri Gajendra Singh Shekhawat</h2>
+            <p><strong>Hon'ble Minister of Culture</strong></p>
+            <p>📞 +91 11 23386765</p>
+            <p>📧 gsingh.shekhawat@gov.in</p>
+            <p>🏢 Room No. 501, Shastri Bhawan, New Delhi - 110001</p>
+        `;
+    }
+
+    if(type === "state") {
+        modalBody.innerHTML = `
+            <img src="images/rao.png">
+            <h2>Shri Rao Inderjit Singh</h2>
+            <p><strong>Hon'ble Minister of State for Culture</strong></p>
+            <p>📞 +91 11 23385115</p>
+            <p>📧 rao.inderjit@gov.in</p>
+            <p>🏢 Shastri Bhawan, New Delhi - 110001</p>
+        `;
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("ministerModal").style.display = "none";
+}
+
+// Close when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById("ministerModal");
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+</script>
 
 </body>
 </html>
